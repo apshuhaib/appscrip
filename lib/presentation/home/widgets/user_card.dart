@@ -16,9 +16,11 @@ class UserCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.all(6.0),
       child: Card(
+        color: theme.cardColor,
         child: ListTile(
           onTap: onTap,
           leading: CircleAvatar(
@@ -30,11 +32,17 @@ class UserCard extends StatelessWidget {
           ),
           title: Text(
             name,
-            style: const TextStyle(fontSize: 22),
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontSize: 20,
+              color: theme.textTheme.bodyMedium?.color,
+            ),
           ),
           subtitle: Text(
             email,
-            style: const TextStyle(fontSize: 20),
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontSize: 18,
+              color: theme.textTheme.bodyMedium?.color,
+            ),
           ),
         ),
       ),

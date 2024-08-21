@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: CupertinoSearchTextField(
-              padding: EdgeInsetsDirectional.fromSTEB(6, 6, 6, 6),
+              padding: EdgeInsetsDirectional.fromSTEB(6, 16, 6, 16),
               placeholder: 'Search user',
               placeholderStyle: const TextStyle(
                 color: Colors.green,
@@ -59,7 +59,10 @@ class HomeScreen extends StatelessWidget {
                 Icons.search,
                 color: Colors.green,
               ),
-              decoration: const BoxDecoration(color: Colors.white),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
               onChanged: (query) {
                 BlocProvider.of<UserBloc>(context)
                     .add(UserEvent.searchUser(query));

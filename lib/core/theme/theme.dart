@@ -11,7 +11,6 @@ final ThemeData lightTheme = ThemeData(
     titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
   ),
   scaffoldBackgroundColor: Colors.white,
-  // Define other light theme properties here
 );
 
 final ThemeData darkTheme = ThemeData(
@@ -24,5 +23,9 @@ final ThemeData darkTheme = ThemeData(
     titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
   ),
   scaffoldBackgroundColor: Colors.black,
-  // Define other dark theme properties here
+  textTheme: TextTheme(
+    titleLarge: TextStyle(color: Colors.black), // Title color
+    titleMedium: TextStyle(color: Colors.black), // Subtitle color
+    titleSmall: TextStyle(color: Colors.black), // Index color
+  ),
 );
