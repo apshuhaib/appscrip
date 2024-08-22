@@ -17,15 +17,12 @@ flutter run
 
 ## Build the App
 flutter build apk   # For Android
+
 flutter build ios   # For iOS
 
 
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+State Management: Used Bloc for state management to handle app state and business logic.
+Theme Management: Implemented custom theme switching using ThemeBloc and SharedPreferences to persist theme choices.
+Network Connectivity: Utilized the connectivity_plus package for network status checking and displaying error messages when offline.
+UI/UX: Followed a minimal design approach with smooth transitions and a consistent color scheme.
+Error Handling: Implemented error handling with SnackBars for better user experience in case of connectivity issues.
