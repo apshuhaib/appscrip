@@ -20,7 +20,7 @@ flutter build apk   # For Android
 
 flutter build ios   # For iOS
 
-
+## notes
 State Management: Used Bloc for state management to handle app state and business logic.
 
 Folowed clean architecture : Domain Driven Design  
