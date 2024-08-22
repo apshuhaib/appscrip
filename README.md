@@ -5,7 +5,7 @@ Appscrip assignment project.
 ## Instruction on how to run the app
 
 ## Clone the Repository
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/apshuhaib/appscrip.git
 
 cd your-repository
 
