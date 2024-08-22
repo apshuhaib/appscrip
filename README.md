@@ -34,7 +34,7 @@ Added shimmer effect for loading
 Error Handling: Implemented error handling with SnackBars for better user experience in case of connectivity issues.
 
 ## screenshots
-![App icon](assets/images/app_icon.jpeg)
+![App icon](app_icon.jpeg)
 ![Splash screen](assets/images/splash_screen.jpeg)
 ![Home screen](assets/images/home_screen-lightmode.jpeg)
 ![Home screen dark](assets/images/users_dark_mode.jpeg)
