@@ -1,6 +1,6 @@
 # appscrip
 
-Appcrip assignment project.
+Appscrip assignment project.
 
 ## Getting Started
 
