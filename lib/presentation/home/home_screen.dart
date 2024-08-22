@@ -7,6 +7,7 @@ import 'package:appscrip/presentation/home/widgets/user_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shimmer/shimmer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -73,14 +74,46 @@ class HomeScreen extends StatelessWidget {
           BlocBuilder<UserBloc, UserState>(
             builder: (context, state) {
               if (state.isLoading) {
-                return const Center(
-                  child: CircularProgressIndicator(
-                    color: kgreen,
+                return Expanded(
+                  child: ListView.builder(
+                    itemCount: state.userResultData.length,
+                    itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 8.0, horizontal: 16.0),
+                      child: Shimmer.fromColors(
+                        baseColor: Colors.grey[300]!,
+                        highlightColor: Colors.grey[100]!,
+                        child: Container(
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 );
               } else if (state.isError) {
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      backgroundColor: kRed,
+                      behavior: SnackBarBehavior.floating,
+                      content: Text('Check your network connection'),
+                      duration: Duration(seconds: 3),
+                    ),
+                  );
+                });
+
                 return const Center(
-                  child: Text('Error'),
+                  child: Text(
+                    'Error',
+                    style: TextStyle(color: kgreen, fontSize: 20),
+                  ),
                 );
               } else {
                 final users = state.filteredUserResultData;
@@ -88,7 +121,11 @@ class HomeScreen extends StatelessWidget {
                   child: RefreshIndicator(
                     onRefresh: () => _onRefresh(context),
                     child: users.isEmpty
-                        ? const Center(child: Text('No match found'))
+                        ? const Center(
+                            child: Text(
+                            'No User found',
+                            style: TextStyle(color: kgreen, fontSize: 20),
+                          ))
                         : ListView.builder(
                             itemCount: users.length,
                             itemBuilder: (context, index) {

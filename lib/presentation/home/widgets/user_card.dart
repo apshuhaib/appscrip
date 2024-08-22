@@ -24,10 +24,12 @@ class UserCard extends StatelessWidget {
         child: ListTile(
           onTap: onTap,
           leading: CircleAvatar(
+            radius: 40,
             backgroundColor: kwhiteColor,
-            child: Text(
-              index,
-              style: const TextStyle(fontSize: 22, color: kgreen),
+            child: Icon(
+              Icons.person,
+              size: 45,
+              color: kgreen,
             ),
           ),
           title: Text(

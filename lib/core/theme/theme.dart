@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+//light theme
 final ThemeData lightTheme = ThemeData(
   fontFamily: GoogleFonts.montserrat().fontFamily,
   brightness: Brightness.light,
@@ -13,6 +14,7 @@ final ThemeData lightTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
 );
 
+//dark theme
 final ThemeData darkTheme = ThemeData(
   fontFamily: GoogleFonts.montserrat().fontFamily,
   brightness: Brightness.dark,
@@ -24,8 +26,8 @@ final ThemeData darkTheme = ThemeData(
   ),
   scaffoldBackgroundColor: Colors.black,
   textTheme: TextTheme(
-    titleLarge: TextStyle(color: Colors.black), // Title color
-    titleMedium: TextStyle(color: Colors.black), // Subtitle color
-    titleSmall: TextStyle(color: Colors.black), // Index color
+    titleLarge: TextStyle(color: Colors.black),
+    titleMedium: TextStyle(color: Colors.black),
+    titleSmall: TextStyle(color: Colors.black),
   ),
 );

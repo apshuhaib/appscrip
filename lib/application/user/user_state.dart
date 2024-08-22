@@ -17,4 +17,3 @@ class UserState with _$UserState {
         searchQuery: '',
       );
 }
-//comment
