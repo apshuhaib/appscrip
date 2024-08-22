@@ -42,4 +42,4 @@ Error Handling: Implemented error handling with SnackBars for better user experi
 ![User Details](assets/images/user_details.jpeg)
 ![User Details Dark Mode](assets/images/user_details_darkmode.jpeg)
 ![User Dark Mode](assets/images/users_darkmode.jpeg)
-![no network](assets/images/no_internet.jpeg)
+![no network](assets/images/no_connection.jpeg)
