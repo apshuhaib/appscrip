@@ -40,5 +40,5 @@ Error Handling: Implemented error handling with SnackBars for better user experi
 ![Home screen dark](assets/images/users_dark_mode.jpeg)
 ![Search user](assets/images/search_user.jpeg)
 ![User Details](assets/images/users_details.jpeg)
-![User Details Dark Mode](assets/images/users_details_darkmode.jpeg)
-![User Dark Mode](assets/images/users_derkmode.jpeg)
+![User Details Dark Mode](assets/images/user_details_darkmode.jpeg)
+![User Dark Mode](assets/images/users_darkmode.jpeg)
