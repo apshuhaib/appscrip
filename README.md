@@ -35,10 +35,10 @@ Error Handling: Implemented error handling with SnackBars for better user experi
 
 ## screenshots
 ![App icon](app_icon.jpeg)
-![Splash screen](assets/images/splash_screen.jpeg)
-![Home screen](assets/images/home_screen-lightmode.jpeg)
-![Home screen dark](assets/images/users_dark_mode.jpeg)
-![Search user](assets/images/search_user.jpeg)
-![User Details](assets/images/user_details.jpeg)
-![User Details Dark Mode](assets/images/user_details_darkmode.jpeg)
-![User Dark Mode](assets/images/users_darkmode.jpeg)
+![Splash screen](splash_screen.jpeg)
+![Home screen](home_screen-lightmode.jpeg)
+![Home screen dark](users_dark_mode.jpeg)
+![Search user](search_user.jpeg)
+![User Details](user_details.jpeg)
+![User Details Dark Mode](user_details_darkmode.jpeg)
+![User Dark Mode](users_darkmode.jpeg)
