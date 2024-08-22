@@ -2,9 +2,12 @@
 
 Appscrip assignment project.
 
-## Getting Started
+## Instruction on how to run the app
 
-This project is a starting point for a Flutter application.
+## Clone the Repository
+git clone https://github.com/yourusername/your-repository.git
+cd your-repository
+
 
 A few resources to get you started if this is your first Flutter project:
 
