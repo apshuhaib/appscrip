@@ -32,3 +32,6 @@ UI/UX: Followed a minimal design approach with smooth transitions and a consiste
 Added shimmer effect for loading
 
 Error Handling: Implemented error handling with SnackBars for better user experience in case of connectivity issues.
+
+## screenshots
+![Home Screen](https://drive.google.com/file/d/1cHOP9aRAR09e3DDsRt9AtDyZ35wYC_du/view?usp=sharing)
