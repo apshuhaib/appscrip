@@ -1,6 +1,6 @@
 # appscrip
 
-A new Flutter project.
+Appcrip assignment project.
 
 ## Getting Started
 
